@@ -1,12 +1,19 @@
-#Change generator
+import turtle
 
-pikachuhp = 50
-count = 0
+s = turtle.getscreen()
 
-while pikachuhp > 0:
-    angdmg = int(input("How much damage does angel do? "))
-    pikachuhp -= angdmg
-    print("pikachu has",angdmg,"done to it and only has",pikachuhp,"hp left!")
-    count = count+1
-print("Pikachu has fainted")
-print("It took",count,"attacks to faint")
+t = turtle.Turtle()
+t.color("green","yellow")
+
+def picture():
+    t.backward(500)
+    for i in range(100):
+        t.forward(1000)
+        t.left(90)
+        t.forward(1)
+        t.left(85)
+
+
+picture()
+
+turtle.Screen().exitonclick()
